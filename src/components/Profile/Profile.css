@@ -1,0 +1,51 @@
+.view-profile-container {
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+}
+
+.view-profile-form {
+    margin-top: 20px;
+}
+
+.profile-field {
+    margin-bottom: 15px;
+}
+
+.profile-field label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.profile-field input[type="text"],
+.profile-field input[type="email"],
+.profile-field textarea,
+.profile-field input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.profile-picture-preview {
+    margin-top: 10px;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.success-message {
+    color: green;
+    margin-top: 10px;
+}
+
