@@ -4,14 +4,9 @@ import imsLogo from '../../assets/ims.jpg';
 import profileImage from '../../assets/profile.png';
 import { useNavigate } from 'react-router-dom';
 
-
 const ProductManagement = () => {
     const [products, setProducts] = useState([]);
     const navigate = useNavigate();
-
-    const addProduct = (product) => {
-        setProducts([...products, product]);
-    };
 
     const handleDashboardRedirect = () => {
         navigate('/dashboard');
