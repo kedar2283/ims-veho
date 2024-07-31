@@ -53,12 +53,12 @@ body, html {
     align-items: center;
 }
 
-.logo-image {
-    width: 200px; 
-    height: 200px; 
-    object-fit: cover;
-    border-radius: 10px;
-}
+    .logo-image {
+        width: 73px;
+        height: 73px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
 
 /* Fade-in animation */
 @keyframes fadeIn {
