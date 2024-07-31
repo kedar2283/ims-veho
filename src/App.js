@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Dashboard from './components/Dashboard/Dashboard';
+import LandingPage from './components/LandingPage/LandingPage'
 import ProductList from './components/ProductManagement/ProductList';
 import AddProduct from './components/ProductManagement/AddProduct';
 import EditProduct from './components/ProductManagement/EditProduct';
@@ -30,6 +31,7 @@ function App() {
         <Router>
             <div className="app">
                 <Routes>
+                    <Route path="/" element={<LandingPage />} /> 
                     <Route path="/Home" element={<Dashboard />} />
                     <Route path="/login" element={<Login />} />
                     <Route path="/signup" element={<Signup />} />

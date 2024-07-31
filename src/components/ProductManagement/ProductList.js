@@ -17,7 +17,7 @@ const ProductManagement = () => {
     };
 
     const handleEditProductRedirect = (product) => {
-        navigate('/products/edit/:id', { state: { product } });
+        navigate(`/products/edit/${product.id}`, { state: { product } });
     };
 
     return (

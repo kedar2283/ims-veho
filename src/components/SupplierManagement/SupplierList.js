@@ -3,11 +3,11 @@ import { useNavigate } from 'react-router-dom';
 import './SupplierManagement.css';
 
 const SupplierList = () => {
-    const [suppliers, setSuppliers] = useState([]);
+    const [suppliers] = useState([]);
     const navigate = useNavigate();
 
     const handleEditSupplier = (supplier) => {
-        navigate('/suppliers/edit/:id', { state: { supplier } });
+        navigate(`/suppliers/edit/${supplier.id}`, { state: { supplier } });
     };
 
     const handleAddSupplier = () => {
